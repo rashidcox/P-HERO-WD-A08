@@ -32,21 +32,12 @@ const animals = [
 ];
 
 export default function AnimalDetailPage() {
+    const animal = animals[0];
     const params = useParams();
-    const [animal, setAnimal] = useState(null);
-    const [mainImage, setMainImage] = useState("");
+    const [mainImage, setMainImage] = useState(animal.image);
     const [isLoggedIn] = useState(false);
+    
 
-    useEffect(() => {
-        if (!params?.id) return;
-
-        const foundAnimal = animals.find(a => a.id === parseInt(params.id));
-        
-        if (foundAnimal) {
-            setAnimal(foundAnimal);
-            setMainImage(foundAnimal.image);
-        }
-    }, [params.id]);
 
     if (!animal) {
         return (

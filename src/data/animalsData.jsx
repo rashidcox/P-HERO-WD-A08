@@ -1,17 +1,24 @@
 export const animals = [
   {
-    "id": 1,
-    "name": "Black Bengal Goat",
-    "type": "Goat",
-    "breed": "Black Bengal",
-    "price": 25000,
-    "weight": 35,
-    "age": 2,
-    "location": "Rajshahi",
-    "description": "Popular goat breed.",
-    "image": "https://i.ibb.co.com/6kSLkC1/1.jpg",
-    "category": "Small Animal"
-  },
+        "id": 1,
+        "name": "Black Bengal Goat",
+        "type": "Goat",
+        "breed": "Black Bengal",
+        "price": 25000,
+        "weight": 35,
+        "age": 2,
+        "location": "Rajshahi",
+        "description": "Popular goat breed.",
+        "image": "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "images": [
+            "https://i.ibb.co.com/6kSLkC1/1.jpg",
+            "https://i.ibb.co.com/Jjsbn801/2.jpg",
+            "https://i.ibb.co.com/HpD34DTf/3.jpg",
+            "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+            "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+        ],
+        "category": "Small Animal"
+    },
   {
     "id": 2,
     "name": "Deshi Goat",
@@ -23,6 +30,13 @@ export const animals = [
     "location": "Cumilla",
     "description": "Healthy goat.",
     "image": "https://i.ibb.co.com/Jjsbn801/2.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Small Animal"
   },
   {
@@ -36,6 +50,13 @@ export const animals = [
     "location": "Mymensingh",
     "description": "Large goat.",
     "image": "https://i.ibb.co.com/HpD34DTf/3.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",  
+    ],
     "category": "Small Animal"
   },
   {
@@ -49,6 +70,13 @@ export const animals = [
     "location": "Khulna",
     "description": "Imported goat.",
     "image": "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",  
+    ],
     "category": "Small Animal"
   },
   {
@@ -62,6 +90,13 @@ export const animals = [
     "location": "Barishal",
     "description": "Affordable goat.",
     "image": "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Small Animal"
   },
   {
@@ -75,6 +110,13 @@ export const animals = [
     "location": "Gazipur",
     "description": "Cross breed.",
     "image": "https://i.ibb.co.com/B5VzsGN8/6.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Small Animal"
   },
   {
@@ -88,6 +130,13 @@ export const animals = [
     "location": "Noakhali",
     "description": "White goat.",
     "image": "https://i.ibb.co.com/tMFMZF5L/7.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Small Animal"
   },
   {
@@ -101,6 +150,13 @@ export const animals = [
     "location": "Tangail",
     "description": "Premium goat.",
     "image": "https://i.ibb.co.com/35hZdkdD/8.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Small Animal"
   },
   {
@@ -114,6 +170,13 @@ export const animals = [
     "location": "Feni",
     "description": "Small goat.",
     "image": "https://i.ibb.co.com/pvT3j6YB/9.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Small Animal"
   },
   {
@@ -127,6 +190,13 @@ export const animals = [
     "location": "Kushtia",
     "description": "Strong goat.",
     "image": "https://i.ibb.co.com/N2HcqnZ8/10.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Small Animal"
   },
 
@@ -141,6 +211,13 @@ export const animals = [
     "location": "Bogura",
     "description": "Healthy cow.",
     "image": "https://i.ibb.co.com/d0xXPXTt/11.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Large Animal"
   },
   {
@@ -154,6 +231,13 @@ export const animals = [
     "location": "Dhaka",
     "description": "Milk cow.",
     "image": "https://i.ibb.co.com/8HyDz2F/12.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Large Animal"
   },
   {
@@ -167,6 +251,13 @@ export const animals = [
     "location": "Chattogram",
     "description": "Strong cow.",
     "image": "https://i.ibb.co.com/7h0XfNQ/13.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Large Animal"
   },
   {
@@ -180,6 +271,13 @@ export const animals = [
     "location": "Sylhet",
     "description": "Dairy cow.",
     "image": "https://i.ibb.co.com/DTjTxY6/14.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Large Animal"
   },
   {
@@ -193,6 +291,13 @@ export const animals = [
     "location": "Rangpur",
     "description": "Strong bull.",
     "image": "https://i.ibb.co.com/gMNbPwD6/15.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Large Animal"
   },
   {
@@ -206,6 +311,13 @@ export const animals = [
     "location": "Dhaka",
     "description": "Imported cow.",
     "image": "https://i.ibb.co.com/tTPvj913/16.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Large Animal"
   },
   {
@@ -219,6 +331,13 @@ export const animals = [
     "location": "Narsingdi",
     "description": "Healthy cow.",
     "image": "https://i.ibb.co.com/F4ww95qV/17.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Large Animal"
   },
   {
@@ -232,6 +351,13 @@ export const animals = [
     "location": "Jessore",
     "description": "Indian breed.",
     "image": "https://i.ibb.co.com/r2Jtx6qr/18.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Large Animal"
   },
   {
@@ -245,6 +371,13 @@ export const animals = [
     "location": "Dinajpur",
     "description": "Very big bull.",
     "image": "https://i.ibb.co.com/7tfp4chT/19.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Large Animal"
   },
   {
@@ -258,6 +391,13 @@ export const animals = [
     "location": "Pabna",
     "description": "Best milk cow.",
     "image": "https://i.ibb.co.com/1GghrH1g/20.jpg",
+    "images": [
+        "https://i.ibb.co.com/6kSLkC1/1.jpg",
+        "https://i.ibb.co.com/Jjsbn801/2.jpg",
+        "https://i.ibb.co.com/HpD34DTf/3.jpg",
+        "https://i.ibb.co.com/20vzh2Zc/4.jpg",
+        "https://i.ibb.co.com/V0MnG7xJ/5.jpg",
+    ],
     "category": "Large Animal"
   }
 ]
