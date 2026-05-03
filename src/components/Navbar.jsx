@@ -1,5 +1,5 @@
 "use client";
-
+import { SiHappycow } from "react-icons/si";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -26,7 +26,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl">🐄</span>
+          <span className="text-2xl text-green-700"><SiHappycow /></span>
           <h1 className="text-xl font-bold text-green-700">Livestock</h1>
         </Link>
 
@@ -61,7 +61,7 @@ export default function Navbar() {
                   alt="user"
                   className="w-9 h-9 rounded-full border-2 border-green-600"
                 />
-                <span className="text-sm font-semibold">{user.name}</span>
+                <span className="text-sm font-semibold text-green-600">{user.name}</span>
               </button>
 
               {/* Dropdown */}
@@ -95,7 +95,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-2xl"
+          className="md:hidden text-2xl text-green-700"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           ☰

@@ -1,4 +1,4 @@
-export const animalsList = [
+export const animals = [
   {
     "id": 1,
     "name": "Black Bengal Goat",
