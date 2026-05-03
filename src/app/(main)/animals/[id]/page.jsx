@@ -4,7 +4,14 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, MapPin, Calendar, Weight, Tag, User } from 'lucide-react';
+import { 
+  FiArrowLeft, 
+  FiMapPin, 
+  FiCalendar, 
+  FiUser, 
+  FiTag 
+} from "react-icons/fi";
+import { GiWeight } from "react-icons/gi";
 
 // Your data (better to move this to src/data/animals.json later)
 const animals = [
@@ -55,7 +62,7 @@ export default function AnimalDetailPage() {
                     href="/animals"
                     className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 mb-8 font-medium"
                 >
-                    <ArrowLeft size={20} />
+                    <FiArrowLeft size={20} />
                     Back to All Animals
                 </Link>
 
@@ -110,7 +117,7 @@ export default function AnimalDetailPage() {
 
                         <div className="grid grid-cols-2 gap-4">
                             <div className="bg-white p-6 rounded-2xl flex gap-4 items-center">
-                                <Weight className="text-emerald-600" size={32} />
+                                <GiWeight className="text-emerald-600" size={32} />
                                 <div>
                                     <p className="text-gray-500">Weight</p>
                                     <p className="text-2xl font-semibold">{animal.weight} kg</p>
@@ -118,7 +125,7 @@ export default function AnimalDetailPage() {
                             </div>
 
                             <div className="bg-white p-6 rounded-2xl flex gap-4 items-center">
-                                <Calendar className="text-emerald-600" size={32} />
+                                <FiCalendar className="text-emerald-600" size={32} />
                                 <div>
                                     <p className="text-gray-500">Age</p>
                                     <p className="text-2xl font-semibold">{animal.age} Years</p>
@@ -127,7 +134,7 @@ export default function AnimalDetailPage() {
                         </div>
 
                         <div className="bg-white p-6 rounded-2xl flex gap-4 items-center">
-                            <MapPin className="text-emerald-600" size={32} />
+                            <FiMapPin className="text-emerald-600" size={32} />
                             <div>
                                 <p className="text-gray-500">Location</p>
                                 <p className="text-xl font-medium">{animal.location}</p>
@@ -135,7 +142,7 @@ export default function AnimalDetailPage() {
                         </div>
 
                         <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-5 py-2 rounded-full">
-                            <Tag size={20} />
+                            <FiTag size={20} />
                             <span>{animal.category}</span>
                         </div>
 
@@ -150,7 +157,7 @@ export default function AnimalDetailPage() {
                         <div className="bg-white border border-gray-200 rounded-3xl p-8">
                             <div className="flex items-center gap-4 mb-6">
                                 <div className="bg-amber-100 p-3 rounded-2xl">
-                                    <User size={32} className="text-amber-600" />
+                                    <FiUser size={32} className="text-amber-600" />
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-lg">Ready to Book?</h3>
