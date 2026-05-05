@@ -1,2 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+/* Add this to your globals.css */
+@keyframes loading {
+  0% { width: 0%; }
+  50% { width: 100%; }
+  100% { width: 0%; }
+}

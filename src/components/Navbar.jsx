@@ -1,4 +1,5 @@
 "use client";
+
 import { SiHappycow } from "react-icons/si";
 import { useState } from "react";
 import Link from "next/link";
@@ -9,16 +10,27 @@ export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const pathname = usePathname();
 
-  // 🔁 Replace this with real auth later
-  const user = {
+  // 🔐 Real auth state (Replace this with your actual auth logic later)
+  const [user, setUser] = useState({
     name: "Sakib H",
     image: "https://i.pravatar.cc/40",
-  };
+  });
+  // const [user, setUser] = useState(null); // ← Use this when user is logged out
 
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "All Animals", path: "/animals" },
   ];
+
+  const handleLogout = () => {
+    if (confirm("Are you sure you want to logout?")) {
+      setUser(null); // Clear user
+      setDropdownOpen(false);
+      setMenuOpen(false);
+      alert("Logged out successfully!");
+      // Later: Add real logout logic (clear token, redirect, etc.)
+    }
+  };
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
@@ -47,36 +59,35 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Right Side */}
+        {/* Right Side - Desktop */}
         <div className="hidden md:flex items-center gap-4">
           {user ? (
             <div className="relative">
-              {/* User Button */}
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="flex items-center gap-2 hover:bg-gray-100 px-2 py-1 rounded-full transition"
+                className="flex items-center gap-2 hover:bg-gray-100 px-3 py-1 rounded-full transition"
               >
                 <img
                   src={user.image}
-                  alt="user"
-                  className="w-9 h-9 rounded-full border-2 border-green-600"
+                  alt={user.name}
+                  className="w-9 h-9 rounded-full border-2 border-green-600 object-cover"
                 />
                 <span className="text-sm font-semibold text-green-600">{user.name}</span>
               </button>
 
-              {/* Dropdown */}
+              {/* Dropdown Menu */}
               {dropdownOpen && (
-                <div className="absolute right-0 mt-2 w-44 bg-white shadow-xl rounded-xl overflow-hidden border">
+                <div className="absolute right-0 mt-2 w-48 bg-white shadow-xl rounded-xl overflow-hidden border border-gray-100 py-1 z-50">
                   <Link
                     href="/profile"
-                    className="block px-4 py-2 hover:bg-gray-100 text-gray-700"
+                    className="block px-4 py-2.5 hover:bg-gray-100 text-gray-700"
+                    onClick={() => setDropdownOpen(false)}
                   >
                     My Profile
                   </Link>
-
                   <button
-                    onClick={() => alert("Logged out")}
-                    className="w-full text-left px-4 py-2 hover:bg-red-50 text-red-600 font-medium"
+                    onClick={handleLogout}
+                    className="w-full text-left px-4 py-2.5 hover:bg-red-50 text-red-600 font-medium"
                   >
                     Logout
                   </button>
@@ -86,7 +97,7 @@ export default function Navbar() {
           ) : (
             <Link
               href="/login"
-              className="bg-green-600 text-white px-5 py-2 rounded-full font-medium shadow hover:bg-green-700 transition duration-200"
+              className="bg-green-600 text-white px-6 py-2.5 rounded-full font-medium hover:bg-green-700 transition"
             >
               Login
             </Link>
@@ -95,7 +106,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-2xl text-green-700"
+          className="md:hidden text-3xl text-green-700"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           ☰
@@ -104,34 +115,31 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t px-4 pb-4">
-
-          {/* Links */}
+        <div className="md:hidden bg-white border-t px-4 py-4">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.path}
-              className="block py-2 text-gray-700 hover:text-green-600"
+              className="block py-3 text-gray-700 hover:text-green-600 font-medium"
               onClick={() => setMenuOpen(false)}
             >
               {link.name}
             </Link>
           ))}
 
-          {/* Auth Section */}
-          <div className="mt-3 border-t pt-3">
+          <div className="mt-4 pt-4 border-t">
             {user ? (
               <>
                 <Link
                   href="/profile"
-                  className="block py-2 text-gray-700"
+                  className="block py-3 text-gray-700 font-medium"
+                  onClick={() => setMenuOpen(false)}
                 >
                   My Profile
                 </Link>
-
                 <button
-                  onClick={() => alert("Logged out")}
-                  className="block py-2 text-red-600 font-medium"
+                  onClick={handleLogout}
+                  className="block w-full text-left py-3 text-red-600 font-medium"
                 >
                   Logout
                 </button>
@@ -139,7 +147,8 @@ export default function Navbar() {
             ) : (
               <Link
                 href="/login"
-                className="block bg-green-600 text-white text-center py-2 rounded-full font-medium hover:bg-green-700"
+                className="block bg-green-600 text-white text-center py-3 rounded-full font-medium"
+                onClick={() => setMenuOpen(false)}
               >
                 Login
               </Link>
